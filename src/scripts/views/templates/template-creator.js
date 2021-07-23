@@ -25,7 +25,7 @@ const createRestaurantDetailTemplate = ({ restaurant }) => `
   </div>
   <div id="detail-content">
     <button id="modal-cta">
-      <img src="./images/restaurant-outline.svg" alt="Modal Icon">
+      <img src="./images/icon/restaurant-outline.svg" alt="Modal Icon">
     </button>
     <h2 class="detail-title">${restaurant.name}</h2>
     <p>${restaurant.address}, ${restaurant.city}</p>
@@ -45,7 +45,7 @@ const createRestaurantDetailTemplate = ({ restaurant }) => `
       <ul>
         ${restaurant.customerReviews.map((customer) => `
         <li class="customer-review">
-        <img class="customer-img lazyload" src="./images/person-circle-outline.svg" alt="customer">
+        <img class="customer-img lazyload" src="./images/icon/person-circle-outline.svg" alt="customer">
           <div>
             <span>${customer.name}</span>
             <span>${customer.review}</span>
@@ -61,7 +61,7 @@ const createRestaurantDetailTemplate = ({ restaurant }) => `
 const createDetailMenuTemplate = ({ restaurant }) => `
 <div class="modal-content">
   <button id="modal-exit">
-    <img src="./images/close-outline.svg" alt="Modal Icon">
+    <img src="./images/icon/close-outline.svg" alt="Modal Icon">
   </button>
 
   <h2 class="menu-title">Menu</h2>

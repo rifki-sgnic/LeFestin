@@ -6,7 +6,7 @@ const Catalogue = {
     return `
         <section class="lazyload hero-image">
           <div class="hero-text">
-            <h1 class="hero-title">Eat and Chill</h1>
+            <h1 class="hero-title">EAT AND CHILL</h1>
             <p class="hero-tagline">Great experience comes from great foods</p>
           </div>
         </section>

@@ -4,9 +4,9 @@ import { createRestaurantItemTemplate } from '../templates/template-creator';
 const Favorite = {
   async render() {
     return `
-        <section class="hero-image">
+        <section class="lazyload hero-image">
           <div class="hero-text">
-            <h1 class="hero-title">Favorite Page</h1>
+            <h1 class="hero-title">FAVORITE PAGE</h1>
             <p class="hero-tagline">Your favorite restaurants</p>
           </div>
         </section>

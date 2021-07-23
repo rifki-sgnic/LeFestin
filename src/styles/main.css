@@ -2,15 +2,6 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
 }
@@ -21,7 +12,7 @@ html {
   -moz-transition: none !important;
   -ms-transition: none !important;
   -o-transition: none !important;
- }
+}
 
 /* Skip to Content */
 .skip-link {
@@ -56,13 +47,10 @@ a {
 
 header {
   position: fixed;
-  top: 0;
   left: 0;
   right: 0;
-  max-width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   color: #fff;
   padding: 2vh 2.5vh;
   z-index: 1;
@@ -144,7 +132,7 @@ header nav {
   display: flex;
   align-items: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("../public/images/heros/hero-image_2.jpg");
+    url("../public/images/heros/hero-image_2-small.jpg");
   background-position: center;
   width: 100%;
   min-height: 480px;
@@ -156,14 +144,11 @@ header nav {
 
 .hero-text {
   margin: 0 auto;
-  max-width: 800px;
-  color: white;
+  color: #fff;
 }
 
 .hero-title {
   font-size: 2.5em;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 .hero-tagline {
@@ -381,17 +366,13 @@ header nav {
 
 
 /* Footer */
+
 footer {
   display: flex;
-  min-height: 8vh;
-  flex-direction: column;
-  justify-content: center;
 }
 
-.copyright {
-  font-size: 0.8em;
-  align-self: center;
-  opacity: 0.8;
+footer div {
+  margin: 0 auto;
 }
 
 .like {
@@ -460,6 +441,10 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../public/images/heros/hero-image_2-small.jpg");
+  }
 
   .title {
     font-size: 2em;
@@ -580,6 +565,10 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../public/images/heros/hero-image_2-large.jpg");
+  }
 
   .title {
     font-size: 3em;
@@ -705,6 +694,11 @@ footer {
 }
 
 @media screen and (min-width: 1150px) {
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../public/images/heros/hero-image_2-large.jpg");
+  }
+
   .mobile-menu, .menu-exit {
     display: none;
   }
@@ -740,13 +734,8 @@ footer {
   }
 
   header nav {
-    display: flex;
-    flex-direction: unset;
-    justify-content: space-between;
     background: none;
     position: unset;
-    height: auto;
-    padding: 0;
     width: unset;
     transform: unset;
     transition: unset;
