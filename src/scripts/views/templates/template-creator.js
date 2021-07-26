@@ -4,7 +4,7 @@ const createRestaurantItemTemplate = (restaurant) => `
 <li class="catalogue-item">
 <div class="catalogue" tabindex="0">
   <div class="catalogue-image">
-    <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" class="restaurant-img lazyload" alt="Restaurant Poster"/>
+    <img data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" class="restaurant-img lazyload" alt="Restaurant Poster"/>
   </div>
   <div class="catalogue-content">
     <h2 class="catalogue-title"><a href="${`#/detail/${restaurant.id}`}">${restaurant.name}</a></h2>
@@ -21,7 +21,7 @@ const createRestaurantItemTemplate = (restaurant) => `
 const createRestaurantDetailTemplate = ({ restaurant }) => `
 <div class="detail-container">
   <div>
-    <img src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" class="detail-image lazyload" alt="Restaurant Poster"/>
+    <img data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" class="detail-image lazyload" alt="Restaurant Poster"/>
   </div>
   <div id="detail-content">
     <button id="modal-cta">
